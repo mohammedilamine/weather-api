@@ -27,7 +27,8 @@ const statusElement = document.querySelector('[data-status]')
 const temperatureElement = document.querySelector('[data-temperature]')
 const precipitationElement = document.querySelector('[data-precipitation]')
 const windElement = document.querySelector('[data-wind]')
-
+icon.set('icon', 'clear-day')
+icon.play()
 
 function setWeatherData(data, place) {
   locationElement.textContent = place
