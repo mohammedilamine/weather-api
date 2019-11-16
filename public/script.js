@@ -30,12 +30,3 @@ const windElement = document.querySelector('[data-wind]')
 icon.set('icon', 'clear-day')
 icon.play()
 
-function setWeatherData(data, place) {
-  locationElement.textContent = place
-  statusElement.textContent = data.summary
-  temperatureElement.textContent = data.temperature
-  precipitationElement.textContent = `${data.precipProbability * 100}%`
-  windElement.textContent = data.windSpeed
-  icon.set('icon', data.icon)
-  icon.play()
-}
